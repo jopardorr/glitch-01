@@ -1,0 +1,65 @@
+* { 
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+
+}
+
+.glitch {
+    width: 800px;
+    height: 800px;
+    background-image: url('../img/glitch-image-1.jpg');
+    background-size: cover;
+    animation: glitch 2s infinite steps(1);
+    background-position: center;
+
+}
+
+@keyframes glitch   {
+    0%, 100%    {
+        background-image: url('../img/glitch-image-1.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+
+    90%    {
+        background-image: url('../img/glitch-image-2.png');
+        background-size: cover;
+        background-position: center;
+    }
+
+    92.5%    {
+        background-image: url('../img/glitch-image-3.png');
+        background-size: cover;
+        background-position: center;
+    }
+
+    95%, 100%    {
+        background-image: url('../img/glitch-image-4.png');
+        background-size: cover;
+        background-position: center;
+    }
+
+    /*hola*/
+
+    97.5%    {
+        background-image: url('../img/glitch-image-5.png');
+        background-size: cover;
+        background-position: center;
+    }
+
+    100%     {
+        background-image: url('../img/glitch-image-6.png');
+        background-size: cover;
+        background-position: center;
+    }
+
+}
