@@ -81,7 +81,7 @@ body {
 
 @media (max-width: 480px) {
     .glitch {
-        width: 200px;
-        height: 200px;
+        width: 300px;
+        height: 300px;
     }
 }
