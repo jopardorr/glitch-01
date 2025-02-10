@@ -63,3 +63,25 @@ body {
     }
 
 }
+
+/* Media queries para hacer el glitch responsive */
+@media (max-width: 1024px) {
+    .glitch {
+        width: 600px;
+        height: 600px;
+    }
+}
+
+@media (max-width: 768px) {
+    .glitch {
+        width: 400px;
+        height: 400px;
+    }
+}
+
+@media (max-width: 480px) {
+    .glitch {
+        width: 100%;
+        height: 100%;
+    }
+}
