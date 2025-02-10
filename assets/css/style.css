@@ -1,87 +1,58 @@
-* { 
+body {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-
 }
 
-body {
-    height: 100vh;
+.container-1 {
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-sizing: border-box;
-
 }
+
+.container-2 {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
 
 .glitch {
-    width: 800px;
-    height: 800px;
+    width: 100%;             /* Toma el 100% del ancho del contenedor */
+    padding-top: 100%;       /* Mantiene la proporción cuadrada */
+    position: relative;      
     background-image: url('../img/glitch-image-1.jpg');
     background-size: cover;
-    animation: glitch 2s infinite steps(1);
     background-position: center;
-
+    animation: glitch 3s infinite steps(1);
 }
 
-@keyframes glitch   {
-    0%, 100%    {
+@keyframes glitch {
+    0%, 15% {
         background-image: url('../img/glitch-image-1.jpg');
-        background-size: cover;
-        background-position: center;
     }
-
-    90%    {
+    20% {
         background-image: url('../img/glitch-image-2.png');
-        background-size: cover;
-        background-position: center;
     }
-
-    92.5%    {
+    35% {
         background-image: url('../img/glitch-image-3.png');
-        background-size: cover;
-        background-position: center;
     }
-
-    95%, 100%    {
+    50% {
         background-image: url('../img/glitch-image-4.png');
-        background-size: cover;
-        background-position: center;
     }
-
-    /*hola*/
-
-    97.5%    {
+    65% {
         background-image: url('../img/glitch-image-5.png');
-        background-size: cover;
-        background-position: center;
     }
-
-    100%     {
+    80% {
         background-image: url('../img/glitch-image-6.png');
-        background-size: cover;
-        background-position: center;
     }
-
-}
-
-/* Media queries para hacer el glitch responsive */
-@media (max-width: 1024px) {
-    .glitch {
-        width: 600px;
-        height: 600px;
+    90% {
+        background-image: url('../img/glitch-image-7.png');
     }
-}
-
-@media (max-width: 768px) {
-    .glitch {
-        width: 400px;
-        height: 400px;
-    }
-}
-
-@media (max-width: 480px) {
-    .glitch {
-        width: 300px;
-        height: 300px;
+    100% {
+        background-image: url('../img/glitch-image-8.png');
     }
 }
